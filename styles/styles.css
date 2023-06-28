@@ -40,6 +40,14 @@ body {
     }
 }
 
+@media (max-width:730px) {
+    .card {
+        padding: 1rem;
+        width: 380px;
+        margin-left: -105px;
+    }
+}
+
 .padding {
     padding: 5rem;
     display: flex;
@@ -84,8 +92,10 @@ body {
 
 .card-body {
     flex: 1 1 auto;
-    padding: 1.25rem
+    padding: 1.25rem;
+    
 }
+
 
 .card .card-title {
     color: #000000;
@@ -134,6 +144,14 @@ body {
     border-radius: 2px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 }
+@media (max-width:400px) {
+    .form-control {
+        font-size: 0.8rem;
+        font-weight: bold;
+        height: 40px;
+        margin-left: 1.5px;
+    }
+}
 
 .add-items .btn {
     margin-left: .5rem
@@ -145,6 +163,14 @@ body {
     font-weight: 400;
     padding: .7rem 1.5rem;
     border-radius: 15px;
+}
+@media (max-width:400px) {
+    .btn {
+        width: 90px;
+        height: 40px;
+        padding: .7rem .3rem;
+        font-size: 0.8rem;
+    }
 }
 
 .list-wrapper {
@@ -384,11 +410,11 @@ input[type="checkbox"] {
 }
 
 .form-check .form-check-label input[type="checkbox"]:checked+.input-helper:before {
-    
+    border: 1px #888;
     border-width: 0;
     content: '\f00c';
     font-family: 'FontAwesome';
-    color: #003cff;
+    color: #00ff66;
 }
 
 .form-check .form-check-label input[type="checkbox"]+.input-helper:before {
@@ -485,4 +511,7 @@ input[type="checkbox"] {
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile,
 .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item {
     display: flex !important
+}
+::-webkit-scrollbar {
+    width: 8px;
 }
