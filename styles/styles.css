@@ -253,6 +253,7 @@ body {
     margin-right: 15px
 }
 
+
 .list-wrapper .remove {
     cursor: pointer;
     font-size: 1.438rem;
@@ -414,7 +415,7 @@ input[type="checkbox"] {
     border-width: 0;
     content: '\f00c';
     font-family: 'FontAwesome';
-    color: #00ff66;
+    color: #14c259;
 }
 
 .form-check .form-check-label input[type="checkbox"]+.input-helper:before {
@@ -476,13 +477,26 @@ input[type="checkbox"] {
 
 .mdi:before {
     font-family: FontAwesome;
-    content: "\f00d";
+    content: "\f014";
     display: inline-block;
     padding-right: 3px;
     vertical-align: middle;
-    font-size: .756em;
-    color: #405189
+    font-size: 1.2em;
+    color: red
 }
+
+@media (max-width:991.98px) {
+    .mdi:before {
+    font-family: FontAwesome;
+    content: "\f014";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-size: .95em;
+    color: red
+    }
+}
+
 
 .list-wrapper ul {
     padding: 0;
